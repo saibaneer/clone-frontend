@@ -1,0 +1,45 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "ISpatha",
+  "sourceName": "src/governance/sub-governance/MarketBasedGovernance.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "marketId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "getPosition",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "supplyShares",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint128",
+          "name": "borrowShares",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "collateral",
+          "type": "uint128"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

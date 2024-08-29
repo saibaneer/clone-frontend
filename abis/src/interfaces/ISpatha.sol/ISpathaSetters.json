@@ -1,0 +1,635 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "ISpathaSetters",
+  "sourceName": "src/interfaces/ISpatha.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "approved",
+          "type": "address"
+        },
+        {
+          "internalType": "bool",
+          "name": "newisApproved",
+          "type": "bool"
+        }
+      ],
+      "name": "setApproved",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "minBorrowRateThreshold",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "midBorrowRateThreshold",
+          "type": "uint256"
+        }
+      ],
+      "name": "setBorrowRateThresholds",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint8",
+          "name": "riskTier",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint256",
+          "name": "newFee",
+          "type": "uint256"
+        }
+      ],
+      "name": "setDefaultMarketFee",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newFeeRecipient",
+          "type": "address"
+        }
+      ],
+      "name": "setFeeRecipient",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "irm",
+          "type": "address"
+        },
+        {
+          "internalType": "enum InterestRateMode",
+          "name": "mode",
+          "type": "uint8"
+        }
+      ],
+      "name": "setIrmAddress",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "loanToken",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "collateralToken",
+              "type": "address"
+            },
+            {
+              "internalType": "uint8",
+              "name": "riskTier",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lltv",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "irm",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct MarketParams",
+          "name": "marketParams",
+          "type": "tuple"
+        },
+        {
+          "internalType": "bool",
+          "name": "isPaused",
+          "type": "bool"
+        }
+      ],
+      "name": "setIsAddCollateralPaused",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "loanToken",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "collateralToken",
+              "type": "address"
+            },
+            {
+              "internalType": "uint8",
+              "name": "riskTier",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lltv",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "irm",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct MarketParams",
+          "name": "marketParams",
+          "type": "tuple"
+        },
+        {
+          "internalType": "bool",
+          "name": "isPaused",
+          "type": "bool"
+        }
+      ],
+      "name": "setIsAddLiquidityPaused",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "loanToken",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "collateralToken",
+              "type": "address"
+            },
+            {
+              "internalType": "uint8",
+              "name": "riskTier",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lltv",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "irm",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct MarketParams",
+          "name": "marketParams",
+          "type": "tuple"
+        },
+        {
+          "internalType": "bool",
+          "name": "isPaused",
+          "type": "bool"
+        }
+      ],
+      "name": "setIsBorrowPaused",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bool",
+          "name": "isPaused",
+          "type": "bool"
+        }
+      ],
+      "name": "setIsClaimRewardsPaused",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "loanToken",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "collateralToken",
+              "type": "address"
+            },
+            {
+              "internalType": "uint8",
+              "name": "riskTier",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lltv",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "irm",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct MarketParams",
+          "name": "marketParams",
+          "type": "tuple"
+        },
+        {
+          "internalType": "bool",
+          "name": "isPaused",
+          "type": "bool"
+        }
+      ],
+      "name": "setIsLiquidatePaused",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "loanToken",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "collateralToken",
+              "type": "address"
+            },
+            {
+              "internalType": "uint8",
+              "name": "riskTier",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lltv",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "irm",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct MarketParams",
+          "name": "marketParams",
+          "type": "tuple"
+        },
+        {
+          "internalType": "bool",
+          "name": "isPaused",
+          "type": "bool"
+        }
+      ],
+      "name": "setIsPaused",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "loanToken",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "collateralToken",
+              "type": "address"
+            },
+            {
+              "internalType": "uint8",
+              "name": "riskTier",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lltv",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "irm",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct MarketParams",
+          "name": "marketParams",
+          "type": "tuple"
+        },
+        {
+          "internalType": "bool",
+          "name": "isPaused",
+          "type": "bool"
+        }
+      ],
+      "name": "setIsRepayPaused",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "loanToken",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "collateralToken",
+              "type": "address"
+            },
+            {
+              "internalType": "uint8",
+              "name": "riskTier",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lltv",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "irm",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct MarketParams",
+          "name": "marketParams",
+          "type": "tuple"
+        },
+        {
+          "internalType": "bool",
+          "name": "isPaused",
+          "type": "bool"
+        }
+      ],
+      "name": "setIsWithdrawCollateralPaused",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "loanToken",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "collateralToken",
+              "type": "address"
+            },
+            {
+              "internalType": "uint8",
+              "name": "riskTier",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lltv",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "irm",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct MarketParams",
+          "name": "marketParams",
+          "type": "tuple"
+        },
+        {
+          "internalType": "bool",
+          "name": "isPaused",
+          "type": "bool"
+        }
+      ],
+      "name": "setIsWithdrawLiquidityPaused",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "loanToken",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "collateralToken",
+              "type": "address"
+            },
+            {
+              "internalType": "uint8",
+              "name": "riskTier",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lltv",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "irm",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct MarketParams",
+          "name": "marketParams",
+          "type": "tuple"
+        },
+        {
+          "internalType": "uint256",
+          "name": "newFee",
+          "type": "uint256"
+        }
+      ],
+      "name": "setMarketFee",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "loanToken",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "collateralToken",
+              "type": "address"
+            },
+            {
+              "internalType": "uint8",
+              "name": "riskTier",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lltv",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "irm",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct MarketParams",
+          "name": "marketParams",
+          "type": "tuple"
+        },
+        {
+          "internalType": "enum InterestRateMode",
+          "name": "mode",
+          "type": "uint8"
+        }
+      ],
+      "name": "setMarketIrm",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "loanToken",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "collateralToken",
+              "type": "address"
+            },
+            {
+              "internalType": "uint8",
+              "name": "riskTier",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lltv",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "irm",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct MarketParams",
+          "name": "marketParams",
+          "type": "tuple"
+        },
+        {
+          "internalType": "uint256",
+          "name": "lltv",
+          "type": "uint256"
+        }
+      ],
+      "name": "setMarketLltv",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "priceOracle_",
+          "type": "address"
+        }
+      ],
+      "name": "setPriceOracle",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "enum Governors",
+          "name": "govToSet",
+          "type": "uint8"
+        },
+        {
+          "internalType": "address",
+          "name": "newGovernor",
+          "type": "address"
+        }
+      ],
+      "name": "transferGovernance",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

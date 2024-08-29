@@ -1,0 +1,316 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "SpathaStorage",
+  "sourceName": "src/SpathaStorage.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "DOMAIN_SEPARATOR",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "feeRecipient",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "fees",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "Id",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "name": "idToMarketParams",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "loanToken",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "collateralToken",
+          "type": "address"
+        },
+        {
+          "internalType": "uint8",
+          "name": "riskTier",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint256",
+          "name": "lltv",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "irm",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "irmAddressProvider",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "isApproved",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "Id",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "name": "market",
+      "outputs": [
+        {
+          "internalType": "uint128",
+          "name": "totalSupplyAssets",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "totalSupplyShares",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "totalBorrowAssets",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "totalBorrowShares",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "lastUpdate",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "fee",
+          "type": "uint128"
+        },
+        {
+          "components": [
+            {
+              "internalType": "bool",
+              "name": "isAddLiquidityPaused",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "isAddCollateralPaused",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "isBorrowPaused",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "isWithdrawLiquidityPaused",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "isWithdrawCollateralPaused",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "isRepayPaused",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "isLiquidatePaused",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct PauseStatuses",
+          "name": "pauseStatuses",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "marketGovernor",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "nonce",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "Id",
+          "name": "",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "position",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "supplyShares",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint128",
+          "name": "borrowShares",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "collateral",
+          "type": "uint128"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "priceOracle",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "protocolGovernor",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

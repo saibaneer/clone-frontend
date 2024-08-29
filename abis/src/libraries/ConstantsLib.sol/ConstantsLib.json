@@ -1,0 +1,89 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "ConstantsLib",
+  "sourceName": "src/libraries/ConstantsLib.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "ADJUSTMENT_SPEED",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "CURVE_STEEPNESS",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "INITIAL_RATE_AT_TARGET",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "MAX_RATE_AT_TARGET",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "MIN_RATE_AT_TARGET",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "TARGET_UTILIZATION",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x61019761003a600b82828239805160001a60731461002d57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe730000000000000000000000000000000000000000301460806040526004361061006c5760003560e01c8063019ec38b1461007157806358f5cbad1461008b5780635a92fa85146100935780639a1a14d91461009b578063d91042b5146100aa578063fc4c2d54146100b2575b600080fd5b6100796100c1565b60405190815260200160405180910390f35b6100796100d9565b6100796100ef565b610079670c7d713b49da000081565b610079610106565b610079673782dace9d90000081565b6100d66301e1338066038d7ea4c68000610117565b81565b6100d66301e13380671bc16d674ec80000610117565b6100d66301e133806802b5e3af16b1880000610117565b6100d66301e13380668e1bc9bf0400005b60008261013457634e487b7160e01b600052601260045260246000fd5b600160ff1b82146000198414161561015c57634e487b7160e01b600052601160045260246000fd5b50059056fea26469706673582212208391fa46b85bffb5c938426689eabeb2aa246e4233d961cbd963ce987113fbf664736f6c63430008180033",
+  "deployedBytecode": "0x730000000000000000000000000000000000000000301460806040526004361061006c5760003560e01c8063019ec38b1461007157806358f5cbad1461008b5780635a92fa85146100935780639a1a14d91461009b578063d91042b5146100aa578063fc4c2d54146100b2575b600080fd5b6100796100c1565b60405190815260200160405180910390f35b6100796100d9565b6100796100ef565b610079670c7d713b49da000081565b610079610106565b610079673782dace9d90000081565b6100d66301e1338066038d7ea4c68000610117565b81565b6100d66301e13380671bc16d674ec80000610117565b6100d66301e133806802b5e3af16b1880000610117565b6100d66301e13380668e1bc9bf0400005b60008261013457634e487b7160e01b600052601260045260246000fd5b600160ff1b82146000198414161561015c57634e487b7160e01b600052601160045260246000fd5b50059056fea26469706673582212208391fa46b85bffb5c938426689eabeb2aa246e4233d961cbd963ce987113fbf664736f6c63430008180033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

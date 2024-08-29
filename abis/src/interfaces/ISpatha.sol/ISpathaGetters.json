@@ -1,0 +1,592 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "ISpathaGetters",
+  "sourceName": "src/interfaces/ISpatha.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "collateralToken",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "loanToken",
+          "type": "address"
+        }
+      ],
+      "name": "getCollateralPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "loanToken",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "collateralToken",
+              "type": "address"
+            },
+            {
+              "internalType": "uint8",
+              "name": "riskTier",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lltv",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "irm",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct MarketParams",
+          "name": "marketParams",
+          "type": "tuple"
+        },
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "getExpectedBorrowAssets",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "loanToken",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "collateralToken",
+              "type": "address"
+            },
+            {
+              "internalType": "uint8",
+              "name": "riskTier",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lltv",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "irm",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct MarketParams",
+          "name": "marketParams",
+          "type": "tuple"
+        }
+      ],
+      "name": "getExpectedMarketBalances",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "loanToken",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "collateralToken",
+              "type": "address"
+            },
+            {
+              "internalType": "uint8",
+              "name": "riskTier",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lltv",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "irm",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct MarketParams",
+          "name": "marketParams",
+          "type": "tuple"
+        },
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "getExpectedSupplyAssets",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "loanToken",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "collateralToken",
+              "type": "address"
+            },
+            {
+              "internalType": "uint8",
+              "name": "riskTier",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lltv",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "irm",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct MarketParams",
+          "name": "marketParams",
+          "type": "tuple"
+        }
+      ],
+      "name": "getExpectedTotalBorrowAssets",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "totalBorrowAssets",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "loanToken",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "collateralToken",
+              "type": "address"
+            },
+            {
+              "internalType": "uint8",
+              "name": "riskTier",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lltv",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "irm",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct MarketParams",
+          "name": "marketParams",
+          "type": "tuple"
+        }
+      ],
+      "name": "getExpectedTotalSupplyAssets",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "totalSupplyAssets",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "loanToken",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "collateralToken",
+              "type": "address"
+            },
+            {
+              "internalType": "uint8",
+              "name": "riskTier",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lltv",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "irm",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct MarketParams",
+          "name": "marketParams",
+          "type": "tuple"
+        }
+      ],
+      "name": "getExpectedTotalSupplyShares",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "totalSupplyShares",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "enum RiskTier",
+          "name": "riskTier",
+          "type": "uint8"
+        }
+      ],
+      "name": "getLltvBounds",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "min",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "max",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "Id",
+          "name": "id",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getMarketBalances",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint128",
+              "name": "totalSupplyAssets",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "totalSupplyShares",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "totalBorrowAssets",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "totalBorrowShares",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "lastUpdate",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "fee",
+              "type": "uint128"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "bool",
+                  "name": "isAddLiquidityPaused",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "isAddCollateralPaused",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "isBorrowPaused",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "isWithdrawLiquidityPaused",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "isWithdrawCollateralPaused",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "isRepayPaused",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "isLiquidatePaused",
+                  "type": "bool"
+                }
+              ],
+              "internalType": "struct PauseStatuses",
+              "name": "pauseStatuses",
+              "type": "tuple"
+            }
+          ],
+          "internalType": "struct Market",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "loanToken",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "collateralToken",
+              "type": "address"
+            },
+            {
+              "internalType": "uint8",
+              "name": "riskTier",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lltv",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "irm",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct MarketParams",
+          "name": "marketParams",
+          "type": "tuple"
+        }
+      ],
+      "name": "getMarketIdWithMarketParams",
+      "outputs": [
+        {
+          "internalType": "Id",
+          "name": "id",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "Id",
+          "name": "id",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getMarketParams",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "loanToken",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "collateralToken",
+              "type": "address"
+            },
+            {
+              "internalType": "uint8",
+              "name": "riskTier",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lltv",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "irm",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct MarketParams",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getMarketsCreated",
+      "outputs": [
+        {
+          "internalType": "Id[]",
+          "name": "",
+          "type": "bytes32[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "Id",
+          "name": "id",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "getPosition",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "supplyShares",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint128",
+          "name": "borrowShares",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "collateral",
+          "type": "uint128"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
